@@ -94,6 +94,16 @@ CreaPaciente
 InitializeComponent
 </summary>
 </member>
+<member name="T:CentroMedico3.MainMedico">
+<summary>
+MainMedico
+</summary>
+</member>
+<member name="M:CentroMedico3.MainMedico.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:CentroMedico3.VerCitas">
 <summary>
 VerCitas
@@ -120,6 +130,46 @@ VerPacientes
 </summary>
 </member>
 <member name="M:CentroMedico3.VerPacientes.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CentroMedico3.WinAtencionMedica">
+<summary>
+WinAtencionMedica
+</summary>
+</member>
+<member name="M:CentroMedico3.WinAtencionMedica.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CentroMedico3.WinConsulta">
+<summary>
+WinConsulta
+</summary>
+</member>
+<member name="M:CentroMedico3.WinConsulta.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CentroMedico3.WinHistoriaClinica">
+<summary>
+WinHistoriaClinica
+</summary>
+</member>
+<member name="M:CentroMedico3.WinHistoriaClinica.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:CentroMedico3.WinMedicina">
+<summary>
+WinMedicina
+</summary>
+</member>
+<member name="M:CentroMedico3.WinMedicina.InitializeComponent">
 <summary>
 InitializeComponent
 </summary>

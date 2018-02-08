@@ -65,6 +65,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="clases\HistoriaClinica.vb" />
+    <Compile Include="clases\Paciente.vb" />
+    <Compile Include="clases\Persona.vb" />
     <Compile Include="ConsultaFactura.xaml.vb">
       <DependentUpon>ConsultaFactura.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,9 @@
     <Compile Include="CreaPaciente.xaml.vb">
       <DependentUpon>CreaPaciente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainMedico.xaml.vb">
+      <DependentUpon>MainMedico.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VerCitas.xaml.vb">
       <DependentUpon>VerCitas.xaml</DependentUpon>
     </Compile>
@@ -85,6 +91,18 @@
     </Compile>
     <Compile Include="VerPacientes.xaml.vb">
       <DependentUpon>VerPacientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinAtencionMedica.xaml.vb">
+      <DependentUpon>WinAtencionMedica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinConsulta.xaml.vb">
+      <DependentUpon>WinConsulta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinHistoriaClinica.xaml.vb">
+      <DependentUpon>WinHistoriaClinica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinMedicina.xaml.vb">
+      <DependentUpon>WinMedicina.xaml</DependentUpon>
     </Compile>
     <Page Include="ConsultaFactura.xaml">
       <SubType>Designer</SubType>
@@ -101,6 +119,10 @@
     <Page Include="CreaPaciente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMedico.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainRecepcionista.xaml">
       <SubType>Designer</SubType>
@@ -132,6 +154,22 @@
     <Page Include="VerPacientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinAtencionMedica.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinConsulta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinHistoriaClinica.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WinMedicina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

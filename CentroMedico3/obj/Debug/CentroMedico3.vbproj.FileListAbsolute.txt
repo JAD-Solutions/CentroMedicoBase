@@ -30,3 +30,13 @@ c:\users\johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\CreaPaciente.
 c:\users\johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\VerCitas.baml
 c:\users\johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\VerFacturas.baml
 c:\users\johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\VerPacientes.baml
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\MainMedico.g.vb
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinAtencionMedica.g.vb
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinConsulta.g.vb
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinHistoriaClinica.g.vb
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinMedicina.g.vb
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\MainMedico.baml
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinAtencionMedica.baml
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinConsulta.baml
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinHistoriaClinica.baml
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\WinMedicina.baml

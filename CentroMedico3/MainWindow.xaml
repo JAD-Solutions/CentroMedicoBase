@@ -10,6 +10,12 @@
         <Grid.Background>
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
+        <Label Content="CENTRO MEDICO JADI" HorizontalAlignment="Left" Height="88" Margin="62,35,0,0" VerticalAlignment="Top" Width="777" FontFamily="elephant" FontSize="45"/>
+        <Label Content="USUARIO:" HorizontalAlignment="Left" Height="45" Margin="162,163,0,0" VerticalAlignment="Top" Width="286" FontFamily="elephant" FontSize="20"/>
+        <Label Content="CONTRASEÑA" HorizontalAlignment="Left" Height="45" Margin="162,308,0,0" VerticalAlignment="Top" Width="286" FontFamily="elephant" FontSize="20"/>
+        <Button Content="INGRESAR" HorizontalAlignment="Left" Height="45" Margin="365,409,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="453,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" Name="txtpassword"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="453,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" Name="txtusuario"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="MainMedico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CentroMedico3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
+        </Grid.Background>
+
+        <Button Name="bt_citas" Content="Ver Citas" HorizontalAlignment="Left" Margin="459,260,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_citas_Click"/>
+        <Label Content="Dr." HorizontalAlignment="Left" Margin="60,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16"/>
+        <Label Content="Pepito Pérez" HorizontalAlignment="Left" Margin="122,74,0,0" VerticalAlignment="Top" Width="242" FontSize="14" FontStyle="Italic"/>
+        <Button Name="bt_salir" Content="Salir" HorizontalAlignment="Left" Margin="459,374,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_salir_Click"/>
+
+    </Grid>
+</Window>
