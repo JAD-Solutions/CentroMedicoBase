@@ -1,0 +1,19 @@
+﻿<Window x:Class="MainRecepcionista"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CentroMedico3"
+        mc:Ignorable="d"
+        Title="MainRecepcionista" Height="600" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
+        </Grid.Background>
+        <Button Content="VER CITAS" HorizontalAlignment="Left" Height="64" Margin="94,323,0,0" VerticalAlignment="Top" Width="232" Click="Button_Click"/>
+        <Button Content="VER PACIENTE" HorizontalAlignment="Left" Height="64" Margin="382,323,0,0" VerticalAlignment="Top" Width="266" Click="Button_Click_1"/>
+        <Button Content="IMPRIMIR FACTURA" HorizontalAlignment="Left" Height="64" Margin="692,323,0,0" VerticalAlignment="Top" Width="262" Click="Button_Click_2"/>
+        <Label Content="RECEPCIONISTA" HorizontalAlignment="Left" Height="54" Margin="84,35,0,0" VerticalAlignment="Top" Width="464" FontFamily="elephant" FontSize="45"/>
+
+    </Grid>
+</Window>
