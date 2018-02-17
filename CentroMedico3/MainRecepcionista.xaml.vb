@@ -19,4 +19,10 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Button_Click_3(sender As Object, e As RoutedEventArgs)
+        Dim principal As New MainWindow
+        principal.Show()
+        Me.Close()
+    End Sub
 End Class

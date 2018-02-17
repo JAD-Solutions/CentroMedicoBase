@@ -9,7 +9,7 @@
             Dim mainrecepcionista As New MainRecepcionista
             mainrecepcionista.Show()
         Else
-            Dim maindoctor As New MainMedico
+            Dim maindoctor As New WinConsulta
             maindoctor.Show()
         End If
         Me.Close()

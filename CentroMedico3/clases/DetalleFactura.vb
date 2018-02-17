@@ -2,7 +2,7 @@
 Public Class DetalleFactura
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_det As Integer
+    Dim _codigo_det As Integer = 0
     Dim _consulta_det As Consulta
     Dim _receta_det As Receta
     Dim _cantidad_det As Integer
@@ -11,8 +11,7 @@ Public Class DetalleFactura
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo As Integer, ByVal consulta_det As Consulta, ByVal receta_det As Receta, ByVal cantidad As Integer, ByVal subtotal As Double)
-        Me._codigo_det = codigo
+    Public Sub New(ByVal consulta_det As Consulta, ByVal receta_det As Receta, ByVal cantidad As Integer, ByVal subtotal As Double)
         Me._consulta_det = consulta_det
         _receta_det = receta_det
         Me._cantidad_det = cantidad

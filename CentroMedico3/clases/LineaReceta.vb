@@ -4,13 +4,12 @@ Public Class LineaReceta
     Implements INotifyPropertyChanged
 
     'Declaro variables
-    Dim _codigo_lin As Integer
+    Dim _codigo_lin As Integer = 0
     Dim _medicina_lin As Medicina
 
 
     'Constructores
-    Public Sub New(codigo_lin As Integer, medicina_lin As Medicina)
-        _codigo_lin = codigo_lin
+    Public Sub New(medicina_lin As Medicina)
         _medicina_lin = medicina_lin
     End Sub
 

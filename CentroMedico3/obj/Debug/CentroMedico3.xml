@@ -94,16 +94,6 @@ CreaPaciente
 InitializeComponent
 </summary>
 </member>
-<member name="T:CentroMedico3.MainMedico">
-<summary>
-MainMedico
-</summary>
-</member>
-<member name="M:CentroMedico3.MainMedico.InitializeComponent">
-<summary>
-InitializeComponent
-</summary>
-</member>
 <member name="T:CentroMedico3.VerCitas">
 <summary>
 VerCitas

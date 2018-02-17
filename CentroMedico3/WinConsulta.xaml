@@ -11,11 +11,9 @@
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
 
-        <Button Name="bt_atender" Content="Atender" HorizontalAlignment="Left" Margin="444,458,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_atender_Click"/>
-        <Label Content="Dr." HorizontalAlignment="Left" Margin="60,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16"/>
-        <Label Content="Pepito Pérez" HorizontalAlignment="Left" Margin="122,74,0,0" VerticalAlignment="Top" Width="242" FontSize="14" FontStyle="Italic"/>
-        <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="0,541,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_volver_Click"/>
-        <ListView HorizontalAlignment="Left" Height="218" Margin="60,174,0,0" VerticalAlignment="Top" Width="853">
+        <Button Name="bt_atender" Content="Atender" HorizontalAlignment="Left" Margin="622,493,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_atender_Click"/>
+        <Button Name="bt_volver" Content="SALIR" HorizontalAlignment="Left" Margin="208,493,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_volver_Click"/>
+        <ListView Name="lstConsultas" HorizontalAlignment="Left" Height="293" Margin="42,160,0,0" VerticalAlignment="Top" Width="898" MouseDoubleClick="lstConsultas_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn
@@ -30,8 +28,14 @@
                         Width="400"/>
                 </GridView>
             </ListView.View>
+            <Label Content="hola"/>
+            <Label Content="."/>
+            <Label Content="... Movimiento "/>
+            <Label Content="naranja ..."/>
+            <Label Content="..."/>
+            <Label Content="el futuro esta en tus manos :v"/>
         </ListView>
-        <Label Content="CONSULTAS" HorizontalAlignment="Left" Margin="444,24,0,0" VerticalAlignment="Top" Width="130" FontSize="20" RenderTransformOrigin="1.16,0.312" FontWeight="Bold">
+        <Label Content="CONSULTAS - MEDICO" HorizontalAlignment="Left" Margin="198,27,0,0" VerticalAlignment="Top" Width="658" RenderTransformOrigin="1.16,0.312" FontWeight="Bold" FontFamily="elephant" FontSize="45">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -41,6 +45,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="540,109,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="47" Margin="809,108,0,0" VerticalAlignment="Top" Width="131"/>
 
     </Grid>
 </Window>

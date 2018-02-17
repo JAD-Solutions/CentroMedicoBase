@@ -82,6 +82,7 @@
     <Compile Include="clases\Recepcionista.vb" />
     <Compile Include="clases\Receta.vb" />
     <Compile Include="clases\Triage.vb" />
+    <Compile Include="Colecciones\ColeccionDetalleFactura.vb" />
     <Compile Include="ConsultaFactura.xaml.vb">
       <DependentUpon>ConsultaFactura.xaml</DependentUpon>
     </Compile>
@@ -93,9 +94,6 @@
     </Compile>
     <Compile Include="CreaPaciente.xaml.vb">
       <DependentUpon>CreaPaciente.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainMedico.xaml.vb">
-      <DependentUpon>MainMedico.xaml</DependentUpon>
     </Compile>
     <Compile Include="VerCitas.xaml.vb">
       <DependentUpon>VerCitas.xaml</DependentUpon>
@@ -133,10 +131,6 @@
     <Page Include="CreaPaciente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainMedico.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainRecepcionista.xaml">
       <SubType>Designer</SubType>
@@ -235,5 +229,6 @@
   <ItemGroup>
     <Resource Include="basic.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

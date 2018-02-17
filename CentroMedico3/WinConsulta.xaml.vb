@@ -13,9 +13,15 @@
     End Sub
 
     Private Sub bt_volver_Click(sender As Object, e As RoutedEventArgs)
-        Dim volver As New MainMedico
-        volver.Show()
+        Dim principal As New MainWindow
+        principal.Show()
         Me.Close()
 
+    End Sub
+
+    Private Sub lstConsultas_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs)
+        Dim ventana_atencion As New WinAtencionMedica
+        ventana_atencion.Show()
+        Me.Close()
     End Sub
 End Class

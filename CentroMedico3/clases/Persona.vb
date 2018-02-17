@@ -22,6 +22,7 @@ Public MustInherit Class Persona  'para que sea la clase padre debo pooner musti
         Me._sexo_per = sexo_per
         Me._telefono_per = telefono_per
         Me._direccion_per = direccion_per
+        Me._codigo_per = 0
     End Sub
 
     Private Sub cambioPropiedad(ByVal propiedad As String)
