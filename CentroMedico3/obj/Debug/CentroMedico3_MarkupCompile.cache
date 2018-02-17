@@ -4,17 +4,30 @@
 winexe
 VB
 .vb
+<<<<<<< HEAD
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\
+=======
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\obj\Debug\
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 CentroMedico3
 none
 false
 
+<<<<<<< HEAD
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\Application.xaml
 13976904299
 
 361308487636
 10-285637309
 ConsultaFactura.xaml;ConsultaPaciente.xaml;CreaCita.xaml;CreaPaciente.xaml;MainRecepcionista.xaml;MainWindow.xaml;VerCitas.xaml;VerFacturas.xaml;VerPacientes.xaml;WinAtencionMedica.xaml;WinConsulta.xaml;WinHistoriaClinica.xaml;WinMedicina.xaml;
+=======
+C:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\Application.xaml
+14-1345628872
+
+22-316282631
+10-285637309
+ConsultaFactura.xaml;ConsultaPaciente.xaml;CreaCita.xaml;CreaPaciente.xaml;MainMedico.xaml;MainRecepcionista.xaml;MainWindow.xaml;VerCitas.xaml;VerFacturas.xaml;VerPacientes.xaml;WinAtencionMedica.xaml;WinConsulta.xaml;WinHistoriaClinica.xaml;WinMedicina.xaml;
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 
 False
 

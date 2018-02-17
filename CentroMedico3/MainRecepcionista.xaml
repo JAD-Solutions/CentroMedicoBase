@@ -14,7 +14,10 @@
         <Button Content="VER PACIENTE" HorizontalAlignment="Left" Height="64" Margin="382,323,0,0" VerticalAlignment="Top" Width="266" Click="Button_Click_1"/>
         <Button Content="IMPRIMIR FACTURA" HorizontalAlignment="Left" Height="64" Margin="692,323,0,0" VerticalAlignment="Top" Width="262" Click="Button_Click_2"/>
         <Label Content="RECEPCIONISTA" HorizontalAlignment="Left" Height="54" Margin="84,35,0,0" VerticalAlignment="Top" Width="464" FontFamily="elephant" FontSize="45"/>
+<<<<<<< HEAD
         <Button Content="SALIR" HorizontalAlignment="Left" Height="48" Margin="10,492,0,0" VerticalAlignment="Top" Width="203" Click="Button_Click_3"/>
+=======
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 
     </Grid>
 </Window>

@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CentroMedico3"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="VerPacientes" Height="600" Width="1000" ResizeMode="NoResize">
+=======
+        Title="VerPacientes" Height="600" Width="1000">
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
 
+<<<<<<< HEAD
         <Button Content="VOLVER"                HorizontalAlignment="Left" Height="45" Margin="26,464,0,0" VerticalAlignment="Top" Width="218" Click="Button_Click"/>
         <Label  Content="PACIENTES EXISTENTES"  HorizontalAlignment="Left" Height="37" Margin="57,10,0,0"  VerticalAlignment="Top" Width="224"/>
         <Button Content="NUEVA PACIENTE"        HorizontalAlignment="Left" Height="46" Margin="26,66,0,0"  VerticalAlignment="Top" Width="218" Click="Button_Click_1"/>
@@ -18,6 +23,15 @@
         <TextBox    Name="txt_busca"            HorizontalAlignment="Left" Height="46" Margin="568,66,0,0" VerticalAlignment="Top" Width="248" Text="{Binding Path=nombre, Mode=TwoWay}"/>
         <Button Content="BUSCAR"                HorizontalAlignment="Left" Height="47" Margin="837,65,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_2"/>
         <ListView   Name="lst_paciente"         HorizontalAlignment="Left" Height="289" Margin="26,146,0,0" VerticalAlignment="Top" Width="942" Background="White" >
+=======
+        <Button Content="VOLVER" HorizontalAlignment="Left" Height="45" Margin="26,464,0,0" VerticalAlignment="Top" Width="218" Click="Button_Click"/>
+        <Label Content="PACIENTES EXISTENTES" HorizontalAlignment="Left" Height="37" Margin="57,10,0,0" VerticalAlignment="Top" Width="224"/>
+        <Button Content="NUEVA PACIENTE" HorizontalAlignment="Left" Height="46" Margin="26,66,0,0" VerticalAlignment="Top" Width="218" Click="Button_Click_1"/>
+        <Button Content="ELIMINAR PACIENTE" HorizontalAlignment="Left" Height="46" Margin="281,66,0,0" VerticalAlignment="Top" Width="253"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="568,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="47" Margin="837,65,0,0" VerticalAlignment="Top" Width="131"/>
+        <ListView HorizontalAlignment="Left" Height="289" Margin="26,146,0,0" VerticalAlignment="Top" Width="942" Background="White"  Name="lst_paciente" >
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
             <Label Content="hola"/>
             <Label Content="."/>
             <Label Content="... Movimiento "/>

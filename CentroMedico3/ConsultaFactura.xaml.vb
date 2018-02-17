@@ -1,4 +1,5 @@
 ﻿Public Class ConsultaFactura
+<<<<<<< HEAD
     'detallefactura_fac As ObservableCollection(Of DetalleFactura), ByVal total_fac As Double, ByVal fecha_fac As Date)
 
     'Dim nacimientoCliente As New System.DateTime(1993, 5, 31, 12, 14, 0)
@@ -8,6 +9,9 @@
 
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
+=======
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
         MsgBox("La Receta ha sido impresa correctamente")
     End Sub
 

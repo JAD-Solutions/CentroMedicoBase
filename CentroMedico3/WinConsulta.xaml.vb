@@ -13,6 +13,7 @@
     End Sub
 
     Private Sub bt_volver_Click(sender As Object, e As RoutedEventArgs)
+<<<<<<< HEAD
         Dim principal As New MainWindow
         principal.Show()
         Me.Close()
@@ -24,4 +25,11 @@
         ventana_atencion.Show()
         Me.Close()
     End Sub
+=======
+        Dim volver As New MainMedico
+        volver.Show()
+        Me.Close()
+
+    End Sub
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 End Class

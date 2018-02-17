@@ -1,5 +1,6 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\ConsultaFactura.xaml;;
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\ConsultaPaciente.xaml;;
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\CreaCita.xaml;;
@@ -13,4 +14,20 @@ FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\WinAtencionM
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\WinConsulta.xaml;;
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\WinHistoriaClinica.xaml;;
 FC:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\WinMedicina.xaml;;
+=======
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\MainRecepcionista.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\MainWindow.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\ConsultaFactura.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\ConsultaPaciente.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\CreaCita.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\CreaPaciente.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\VerCitas.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\VerFacturas.xaml;;
+Fc:\users\johnny\source\repos\CentroMedico3\CentroMedico3\VerPacientes.xaml;;
+FC:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\MainMedico.xaml;;
+FC:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\WinAtencionMedica.xaml;;
+FC:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\WinConsulta.xaml;;
+FC:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\WinHistoriaClinica.xaml;;
+FC:\Users\Johnny\source\repos\CentroMedico3\CentroMedico3\WinMedicina.xaml;;
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 

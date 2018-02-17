@@ -65,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
     <Compile Include="clases\Antecedente.vb" />
     <Compile Include="clases\Cita.vb" />
     <Compile Include="clases\Cliente.vb" />
@@ -83,6 +84,11 @@
     <Compile Include="clases\Receta.vb" />
     <Compile Include="clases\Triage.vb" />
     <Compile Include="Colecciones\ColeccionDetalleFactura.vb" />
+=======
+    <Compile Include="clases\HistoriaClinica.vb" />
+    <Compile Include="clases\Paciente.vb" />
+    <Compile Include="clases\Persona.vb" />
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
     <Compile Include="ConsultaFactura.xaml.vb">
       <DependentUpon>ConsultaFactura.xaml</DependentUpon>
     </Compile>
@@ -95,6 +101,12 @@
     <Compile Include="CreaPaciente.xaml.vb">
       <DependentUpon>CreaPaciente.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="MainMedico.xaml.vb">
+      <DependentUpon>MainMedico.xaml</DependentUpon>
+    </Compile>
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
     <Compile Include="VerCitas.xaml.vb">
       <DependentUpon>VerCitas.xaml</DependentUpon>
     </Compile>
@@ -132,6 +144,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
+=======
+    <Page Include="MainMedico.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
     <Page Include="MainRecepcionista.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -229,6 +248,9 @@
   <ItemGroup>
     <Resource Include="basic.jpg" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

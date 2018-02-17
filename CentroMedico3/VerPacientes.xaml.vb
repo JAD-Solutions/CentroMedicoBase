@@ -19,8 +19,11 @@
         Me.Close()
 
     End Sub
+<<<<<<< HEAD
 
     Private Sub Button_Click_2(sender As Object, e As RoutedEventArgs)
 
     End Sub
+=======
+>>>>>>> 2cb7a89fe315b5b13cf267ebc6a1c84b90317923
 End Class
