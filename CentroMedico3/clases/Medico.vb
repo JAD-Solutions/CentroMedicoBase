@@ -11,7 +11,7 @@ Public Class Medico
 
 
     'Constructores
-    Public Sub New(nombre_per As String, apellido_per As String, ci_per As String, fecha_nac_per As Date, sexo_per As String, telefono_per As String, direccion_per As String, cargo_emp As String, sueldo_emp As String, hora_entrada_emp As String, hora_salida_emp As String, especialidad_med As String, universidad_med As String)
+    Public Sub New(nombre_per As String, apellido_per As String, ci_per As String, fecha_nac_per As Date, sexo_per As String, telefono_per As String, direccion_per As String, cargo_emp As String, sueldo_emp As Double, hora_entrada_emp As String, hora_salida_emp As String, especialidad_med As String, universidad_med As String)
         MyBase.New(nombre_per, apellido_per, ci_per, fecha_nac_per, sexo_per, telefono_per, direccion_per, cargo_emp, sueldo_emp, hora_entrada_emp, hora_salida_emp)
         _especialidad_med = especialidad_med
         _universidad_med = universidad_med

@@ -2,21 +2,19 @@
 Public Class Consulta
     Implements INotifyPropertyChanged
     'atributos
+    Dim _codigo_con As Integer
     Dim _motivo_con As String
     Dim _diagnostico_con As String
-    Dim _receta_con As Receta
-    Dim _medico_con As Medico
     Dim _cita_con As Cita
     Dim _triage_con As Triage
-    Dim _paciente_con As Paciente
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal motivo_con As String, ByVal diagnostico_con As String, ByVal receta_con As Receta, ByVal medico_con As Medico, ByVal cita_con As Cita, ByVal triage_con As Triage, ByVal paciente_con As Paciente)
+    Public Sub New(ByVal codigo As Integer, ByVal motivo_con As String, ByVal diagnostico_con As String, ByVal cita_con As Cita, ByVal triage_con As Triage)
+        Me._codigo_con = codigo
         Me._motivo_con = motivo_con
         Me._diagnostico_con = diagnostico_con
-        Me._medico_con = medico_con
         Me._cita_con = cita_con
         Me._triage_con = triage_con
     End Sub
@@ -26,6 +24,15 @@ Public Class Consulta
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propiedad))
     End Sub
     'propiedades
+    Public Property Codigo_con As Integer
+        Get
+            Return _codigo_con
+        End Get
+        Set(value As Integer)
+            _codigo_con = value
+            cambioPropiedad("Codigo_con")
+        End Set
+    End Property
     Public Property Motivo_con As String
         Get
             Return Me._motivo_con
@@ -44,15 +51,7 @@ Public Class Consulta
             Me.cambioPropiedad("Diagnostico_con")
         End Set
     End Property
-    Public Property Medico_con As Medico
-        Get
-            Return Me._medico_con
-        End Get
-        Set(value As Medico)
-            Me._medico_con = value
-            Me.cambioPropiedad("Medico_con")
-        End Set
-    End Property
+
     Public Property Cita_con As Cita
         Get
             Return Me._cita_con
@@ -71,15 +70,7 @@ Public Class Consulta
             Me.cambioPropiedad("Triage_con")
         End Set
     End Property
-    Public Property Paciente_con As Paciente
-        Get
-            Return Me._paciente_con
-        End Get
-        Set(value As Paciente)
-            Me._paciente_con = value
-            Me.cambioPropiedad("Paciente_con")
-        End Set
-    End Property
+
     Public Function registrarConsulta()
 
     End Function

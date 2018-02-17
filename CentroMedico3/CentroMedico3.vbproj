@@ -73,6 +73,7 @@
     <Compile Include="clases\Empleado.vb" />
     <Compile Include="clases\Factura.vb" />
     <Compile Include="clases\HistoriaClinica.vb" />
+    <Compile Include="clases\LineaReceta.vb" />
     <Compile Include="clases\Medicina.vb" />
     <Compile Include="clases\Medico.vb" />
     <Compile Include="clases\Paciente.vb" />

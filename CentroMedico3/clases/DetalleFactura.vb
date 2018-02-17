@@ -2,17 +2,19 @@
 Public Class DetalleFactura
     Implements INotifyPropertyChanged
     'atributos
-    Dim _numero_det As Integer
+    Dim _codigo_det As Integer
     Dim _consulta_det As Consulta
+    Dim _receta_det As Receta
     Dim _cantidad_det As Integer
     Dim _subtotal_det As Double
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal numero As Integer, ByVal consulta_det As Consulta, ByVal cantidad As Integer, ByVal subtotal As Double)
-        Me._numero_det = numero
+    Public Sub New(ByVal codigo As Integer, ByVal consulta_det As Consulta, ByVal receta_det As Receta, ByVal cantidad As Integer, ByVal subtotal As Double)
+        Me._codigo_det = codigo
         Me._consulta_det = consulta_det
+        _receta_det = receta_det
         Me._cantidad_det = cantidad
         Me._subtotal_det = subtotal
     End Sub
@@ -22,13 +24,22 @@ Public Class DetalleFactura
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propiedad))
     End Sub
     'propiedades
-    Public Property Numero_det As Integer
+    Public Property Codigo_det As Integer
         Get
-            Return Me._numero_det
+            Return Me._codigo_det
         End Get
         Set(value As Integer)
-            Me._numero_det = value
-            Me.cambioPropiedad("Numero_det")
+            Me._codigo_det = value
+            Me.cambioPropiedad("Codigo_det")
+        End Set
+    End Property
+    Public Property Receta_det As Receta
+        Get
+            Return _receta_det
+        End Get
+        Set(value As Receta)
+            _receta_det = value
+            cambioPropiedad("Receta_det")
         End Set
     End Property
     Public Property Consulta_det As Consulta

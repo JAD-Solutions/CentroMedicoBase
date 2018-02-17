@@ -1,16 +1,17 @@
 ﻿Imports System.ComponentModel
+Imports System.Collections.ObjectModel
 Public Class Receta
     Implements INotifyPropertyChanged
     'atributos
     Dim _codigo_rec As Integer
     Dim _descripcion_rec As String
-    Dim _lista_medicinas_rec As List(Of Medicina)
+    Dim _lista_medicinas_rec As ObservableCollection(Of Medicina)
 
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_re As Integer, ByVal descripcion_re As String, ByVal lista_medicinas As List(Of Medicina))
+    Public Sub New(ByVal codigo_re As Integer, ByVal descripcion_re As String, ByVal lista_medicinas As ObservableCollection(Of Medicina))
         Me._codigo_rec = codigo_re
         Me._descripcion_rec = descripcion_re
         Me._lista_medicinas_rec = lista_medicinas
@@ -40,11 +41,11 @@ Public Class Receta
             Me.cambioPropiedad("Descripcion_rec")
         End Set
     End Property
-    Public Property Lista_medicinas_rec As List(Of Medicina)
+    Public Property Lista_medicinas_rec As ObservableCollection(Of Medicina)
         Get
             Return Me._lista_medicinas_rec
         End Get
-        Set(value As List(Of Medicina))
+        Set(value As ObservableCollection(Of Medicina))
             Me._lista_medicinas_rec = value
             Me.cambioPropiedad("Lista_medicinas_rec ")
         End Set

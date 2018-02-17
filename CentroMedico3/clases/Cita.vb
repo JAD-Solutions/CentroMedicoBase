@@ -4,17 +4,17 @@ Public Class Cita
     'atributos
     Dim _codigo_cit As Integer
     Dim _fecha_cit As Date
-    Dim _mredico_cit As String
     Dim _paciente_cit As Paciente
     Dim _recepcionista_cit As Recepcionista
+    Dim _medico_cit As Medico
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_cit As Integer, ByVal fecha_cit As Date, ByVal mredico_cit As String, ByVal paciente As Paciente, ByVal recepcionista As Recepcionista)
+    Public Sub New(ByVal codigo_cit As Integer, ByVal fecha_cit As Date, ByVal paciente As Paciente, ByVal recepcionista As Recepcionista, ByVal medico_cit As Medico)
         Me._codigo_cit = codigo_cit
         Me._fecha_cit = fecha_cit
-        Me._mredico_cit = mredico_cit
+        Me._medico_cit = medico_cit
         Me._paciente_cit = paciente
         Me._recepcionista_cit = recepcionista
     End Sub
@@ -42,13 +42,13 @@ Public Class Cita
             Me.cambioPropiedad("Fecha_cit")
         End Set
     End Property
-    Public Property Mredico_cit As String
+    Public Property Medico_cit As Medico
         Get
-            Return Me._mredico_cit
+            Return _medico_cit
         End Get
-        Set(value As String)
-            Me._mredico_cit = value
-            Me.cambioPropiedad("Mredico_cit")
+        Set(value As Medico)
+            _medico_cit = value
+            cambioPropiedad("Medico_cit")
         End Set
     End Property
     Public Property Paciente_cit As Paciente

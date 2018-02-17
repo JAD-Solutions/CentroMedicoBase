@@ -2,6 +2,7 @@
 Public Class Medicina
     Implements INotifyPropertyChanged
     'atributos
+    Dim _codigo_mec As Integer
     Dim _nombre_mec As String
     Dim _contenido_mec As String
     Dim _descripcion_mec As String
@@ -10,7 +11,8 @@ Public Class Medicina
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal nombre As String, ByVal contenido As String, ByVal descripcion As String)
+    Public Sub New(ByVal codigo_mec As Integer, ByVal nombre As String, ByVal contenido As String, ByVal descripcion As String)
+        Me._codigo_mec = codigo_mec
         Me._nombre_mec = nombre
         Me._contenido_mec = contenido
         Me._descripcion_mec = descripcion
@@ -21,6 +23,15 @@ Public Class Medicina
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propiedad))
     End Sub
     'propiedades
+    Public Property Codigo_mec As Integer
+        Get
+            Return _codigo_mec
+        End Get
+        Set(value As Integer)
+            _codigo_mec = value
+        End Set
+    End Property
+
     Public Property Nombre_mec As String
         Get
             Return Me._nombre_mec

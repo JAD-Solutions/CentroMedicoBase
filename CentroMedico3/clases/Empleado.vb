@@ -5,12 +5,12 @@ Public MustInherit Class Empleado
 
     'Declaro variables
     Dim _cargo_emp As String
-    Dim _sueldo_emp As String
+    Dim _sueldo_emp As Double
     Dim _hora_entrada_emp As String
     Dim _hora_salida_emp As String
 
     'Constructores
-    Public Sub New(nombre_per As String, apellido_per As String, ci_per As String, fecha_nac_per As Date, sexo_per As String, telefono_per As String, direccion_per As String, cargo_emp As String, sueldo_emp As String, hora_entrada_emp As String, hora_salida_emp As String)
+    Public Sub New(nombre_per As String, apellido_per As String, ci_per As String, fecha_nac_per As Date, sexo_per As String, telefono_per As String, direccion_per As String, cargo_emp As String, sueldo_emp As Double, hora_entrada_emp As String, hora_salida_emp As String)
         MyBase.New(nombre_per, apellido_per, ci_per, fecha_nac_per, sexo_per, telefono_per, direccion_per)
         _cargo_emp = cargo_emp
         _sueldo_emp = sueldo_emp
@@ -38,11 +38,11 @@ Public MustInherit Class Empleado
             cambioPropiedad("Cargo_emp")
         End Set
     End Property
-    Public Property Sueldo_emp As String
+    Public Property Sueldo_emp As Double
         Get
             Return _sueldo_emp
         End Get
-        Set(value As String)
+        Set(value As Double)
             _sueldo_emp = value
             cambioPropiedad("Sueldo_emp")
         End Set
