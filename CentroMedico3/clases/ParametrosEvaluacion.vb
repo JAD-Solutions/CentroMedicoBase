@@ -2,7 +2,7 @@
 Public Class ParametrosEvaluacion
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_par As Integer
+    Dim _codigo_par As Integer = 0
     Dim _nombre_par As String
     Dim _valor_par As Double
     Dim _fecha_par As Date
@@ -10,8 +10,7 @@ Public Class ParametrosEvaluacion
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo As Integer, ByVal nombre_par As String, ByVal valor_par As Double, ByVal fecha_par As Date)
-        Me._codigo_par = codigo
+    Public Sub New(ByVal nombre_par As String, ByVal valor_par As Double, ByVal fecha_par As Date)
         Me._nombre_par = nombre_par
         Me._valor_par = valor_par
         Me._fecha_par = fecha_par

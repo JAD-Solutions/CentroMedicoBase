@@ -235,5 +235,8 @@
   <ItemGroup>
     <Resource Include="basic.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="colecciones\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

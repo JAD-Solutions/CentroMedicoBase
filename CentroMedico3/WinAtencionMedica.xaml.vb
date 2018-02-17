@@ -8,6 +8,12 @@
     End Sub
 
     Private Sub bt_agregar_medicina_Click(sender As Object, e As RoutedEventArgs)
+        'toma signos vitales
+        Dim peso_par As New ParametrosEvaluacion(0, "");
+
+
+
+
         Dim ventana_medicina As New WinMedicina
         ventana_medicina.Show()
 

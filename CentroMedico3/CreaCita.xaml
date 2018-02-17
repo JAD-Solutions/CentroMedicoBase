@@ -14,10 +14,10 @@
         <Label Content="Cedula" HorizontalAlignment="Left" Height="56" Margin="50,85,0,0" VerticalAlignment="Top" Width="77"/>
         <Label Content="Motivo" HorizontalAlignment="Left" Height="42" Margin="50,141,0,0" VerticalAlignment="Top" Width="77"/>
         <Label Content="Sintomas" HorizontalAlignment="Left" Height="38" Margin="50,250,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="248"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <Button Content="NUEVO PACIENTE" HorizontalAlignment="Left" Height="43" Margin="457,85,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="115" Margin="190,145,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="393"/>
-        <TextBox HorizontalAlignment="Left" Height="115" Margin="190,274,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="393"/>
+        <TextBox HorizontalAlignment="Left" Height="115" Margin="190,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393"/>
+        <TextBox HorizontalAlignment="Left" Height="115" Margin="190,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393"/>
         <Label Content="NUEVA CITA" HorizontalAlignment="Left" Height="34" Margin="50,29,0,0" VerticalAlignment="Top" Width="236"/>
         <Label Content="Especialidad:" HorizontalAlignment="Left" Margin="658,85,0,0" VerticalAlignment="Top" Height="27" Width="100"/>
         <ComboBox HorizontalAlignment="Left" Height="33" Margin="658,117,0,0" VerticalAlignment="Top" Width="292"/>

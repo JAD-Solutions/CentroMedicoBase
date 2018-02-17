@@ -3,7 +3,7 @@ Imports System.Collections.ObjectModel
 Public Class Receta
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_rec As Integer
+    Dim _codigo_rec As Integer = 0
     Dim _descripcion_rec As String
     Dim _lista_medicinas_rec As ObservableCollection(Of LineaReceta)
 
@@ -11,8 +11,7 @@ Public Class Receta
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_re As Integer, ByVal descripcion_re As String, ByVal lista_medicinas As ObservableCollection(Of LineaReceta))
-        Me._codigo_rec = codigo_re
+    Public Sub New(ByVal descripcion_re As String, ByVal lista_medicinas As ObservableCollection(Of LineaReceta))
         Me._descripcion_rec = descripcion_re
         Me._lista_medicinas_rec = lista_medicinas
     End Sub

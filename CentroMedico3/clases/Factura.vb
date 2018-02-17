@@ -4,7 +4,7 @@ Imports System.Collections.ObjectModel
 Public Class Factura
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_fac As Integer
+    Dim _codigo_fac As Integer = 0
     Dim _cliente_fac As Cliente
     Dim _detallefactura_fac As ObservableCollection(Of DetalleFactura)
     Dim _total_fac As Double
@@ -13,8 +13,7 @@ Public Class Factura
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_fac As Integer, ByVal cliente_fac As Cliente, ByVal detallefactura_fac As ObservableCollection(Of DetalleFactura), ByVal total_fac As Double, ByVal fecha_fac As Date)
-        Me._codigo_fac = codigo_fac
+    Public Sub New(ByVal cliente_fac As Cliente, ByVal detallefactura_fac As ObservableCollection(Of DetalleFactura), ByVal total_fac As Double, ByVal fecha_fac As Date)
         Me._cliente_fac = cliente_fac
         Me._detallefactura_fac = detallefactura_fac
         Me._fecha_fac = fecha_fac
