@@ -22,17 +22,40 @@
         <DatePicker HorizontalAlignment="Left" Height="32" Margin="681,122,0,0" VerticalAlignment="Top" Width="109"/>
         <Label Content="Telefono:" HorizontalAlignment="Left" Height="24" Margin="50,92,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
         <Label Content="Direccion:" HorizontalAlignment="Left" Height="25" Margin="50,121,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="132,71,0,0" VerticalAlignment="Top" Width="328"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="132,124,0,0" VerticalAlignment="Top" Width="328"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="132,95,0,0" VerticalAlignment="Top" Width="328"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="587,68,0,0" VerticalAlignment="Top" Width="328"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="587,97,0,0" VerticalAlignment="Top" Width="328"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="24" Margin="718,25,0,0" VerticalAlignment="Top" Width="188"/>
+      
+        <TextBox Name="txt_nombre"      HorizontalAlignment="Left" Height="24" Margin="132,71,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBox Name="txt_direccion"   HorizontalAlignment="Left" Height="24" Margin="132,124,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBox Name="txt_telefono"    HorizontalAlignment="Left" Height="24" Margin="132,95,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBox  HorizontalAlignment="Left" Height="24" Margin="587,68,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBox  HorizontalAlignment="Left" Height="24" Margin="587,97,0,0" VerticalAlignment="Top" Width="328"/>
+        <TextBox  HorizontalAlignment="Left" Height="24" Margin="718,25,0,0" VerticalAlignment="Top" Width="188"/>
         <ListView HorizontalAlignment="Left" Height="275" Margin="31,177,0,0" VerticalAlignment="Top" Width="921">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn
+                        Header="Fecha"
+                        Width="100"/>
+                    <GridViewColumn
+                        Header="Doctor"
+                        Width="100"
+                        />
+                    <GridViewColumn
+                        Header="Diagnóstico"
+                        Width="150"/>
+                    <GridViewColumn
+                        Header="Receta"
+                        Width="150"/>
+                    <GridViewColumn
+                        Header="Peso"
+                        Width="100"/>
+                    <GridViewColumn
+                        Header="Presión"
+                        Width="100"/>
+                    <GridViewColumn
+                        Header="Temperatura"
+                        Width="100"/>
                 </GridView>
+
             </ListView.View>
         </ListView>
 

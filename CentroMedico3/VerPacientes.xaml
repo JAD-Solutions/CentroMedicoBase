@@ -11,14 +11,41 @@
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
 
-        <Button Content="VOLVER"                HorizontalAlignment="Left" Height="45" Margin="26,464,0,0" VerticalAlignment="Top" Width="218" Click="Button_Click"/>
-        <Label  Content="PACIENTES EXISTENTES"  HorizontalAlignment="Left" Height="37" Margin="57,10,0,0"  VerticalAlignment="Top" Width="224"/>
-        <Button Content="NUEVA PACIENTE"        HorizontalAlignment="Left" Height="46" Margin="26,66,0,0"  VerticalAlignment="Top" Width="218" Click="Button_Click_1"/>
-        <Button Content="ELIMINAR PACIENTE"     HorizontalAlignment="Left" Height="46" Margin="281,66,0,0" VerticalAlignment="Top" Width="253"/>
-        <TextBox    Name="txt_busca"            HorizontalAlignment="Left" Height="46" Margin="568,66,0,0" VerticalAlignment="Top" Width="248" Text="{Binding Path=nombre, Mode=TwoWay}"/>
-        <Button Content="BUSCAR"                HorizontalAlignment="Left" Height="47" Margin="837,65,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_2"/>
+        <Button Content="VOLVER"                HorizontalAlignment="Left" Height="46"  Margin="26,464,0,0" VerticalAlignment="Top" Width="200" FontSize="24" Click="Button_Click"/>
+        <Button Content="NUEVO PACIENTE"        HorizontalAlignment="Left" Height="46"  Margin="26,66,0,0"  VerticalAlignment="Top" Width="200" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="BUSCAR"                HorizontalAlignment="Left" Height="46"  Margin="768,66,0,0" VerticalAlignment="Top" Width="200" FontSize="20" Click="Button_Click_2"/>
+        <Button Content="ELIMINAR PACIENTE"     HorizontalAlignment="Left" Height="46"  Margin="249,66,0,0" VerticalAlignment="Top" Width="200" FontSize="20" Click="Button_Click_3"/>
+        <Label  Content="PACIENTES EXISTENTES"  HorizontalAlignment="Left" Height="46"  Margin="26,10,0,0"  VerticalAlignment="Top" Width="423" FontSize="24" FontWeight="Bold" FontFamily="elephant"/>
+        <TextBox    Name="txt_busca"            HorizontalAlignment="Left" Height="46"  Margin="479,66,0,0" VerticalAlignment="Top" Width="271" Text="{Binding Path=nombre, Mode=TwoWay}"/>
         <ListView   Name="lst_paciente"         HorizontalAlignment="Left" Height="289" Margin="26,146,0,0" VerticalAlignment="Top" Width="942" Background="White" >
-            <Label Content="hola"/>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                        Header="Cedula"
+                        Width="90"/>
+                    <GridViewColumn
+                        Header="Nombre"
+                        Width="200"
+                        />
+                    <GridViewColumn
+                        Header="Apellido"
+                        Width="200"/>
+                    <GridViewColumn
+                        Header="Sexo"
+                        Width="50"/>
+                    <GridViewColumn
+                        Header="Telefono"
+                        Width="200"/>
+                    <GridViewColumn
+                        Header="Nacimiento"
+                        Width="200"/>
+                    <GridViewColumn
+                        Header="Direccion"
+                        Width="250"/>
+                </GridView>
+            </ListView.View>
+
+            <Label Content="hola" />
             <Label Content="."/>
             <Label Content="... Movimiento "/>
             <Label Content="naranja ..."/>

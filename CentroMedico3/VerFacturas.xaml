@@ -13,9 +13,9 @@
 
         <Button Content="VOLVER" HorizontalAlignment="Left" Height="45" Margin="26,464,0,0" VerticalAlignment="Top" Width="218" Click="Button_Click"/>
         <Label Content="FACTURAS EXISTENTES" HorizontalAlignment="Left" Height="37" Margin="57,10,0,0" VerticalAlignment="Top" Width="224"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="26,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
-        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="47" Margin="296,66,0,0" VerticalAlignment="Top" Width="131"/>
-        <ListView HorizontalAlignment="Left" Height="289" Margin="26,146,0,0" VerticalAlignment="Top" Width="942" Background="White" Name="lst_facturas" >
+        <TextBox Name="txt_busca" HorizontalAlignment="Left" Height="46" Margin="26,66,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="248"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="47" Margin="296,66,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_1"/>
+        <ListView HorizontalAlignment="Left" Height="289" Margin="26,146,0,0" VerticalAlignment="Top" Width="942" Background="White" Name="lst_factura" >
             <Label Content="hola"/>
             <Label Content="."/>
             <Label Content="... Movimiento "/>

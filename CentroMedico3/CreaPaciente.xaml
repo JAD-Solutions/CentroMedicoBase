@@ -11,23 +11,28 @@
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
 
-        <Label Content="Cedula" HorizontalAlignment="Left" Height="56" Margin="50,85,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label Content="Nombres: " HorizontalAlignment="Left" Height="42" Margin="50,141,0,0" VerticalAlignment="Top" Width="77"/>
-        <Label Content="Apellidos:" HorizontalAlignment="Left" Height="38" Margin="50,220,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="248"/>
-        <Label Content="NUEVA PACIENTE" HorizontalAlignment="Left" Height="34" Margin="50,29,0,0" VerticalAlignment="Top" Width="236"/>
-        <Button Content="GUARDAR PACIENTE" HorizontalAlignment="Left" Height="52" Margin="224,474,0,0" VerticalAlignment="Top" Width="242" Click="Button_Click_2"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Height="52" Margin="552,474,0,0" VerticalAlignment="Top" Width="259" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,145,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="366"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,215,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="366"/>
-        <Label Content="Sexo" HorizontalAlignment="Left" Height="38" Margin="654,85,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
-        <Label Content="Fecha de Nacimiento" HorizontalAlignment="Left" Height="38" Margin="654,170,0,0" VerticalAlignment="Top" Width="157" RenderTransformOrigin="0.532,-0.258"/>
-        <DatePicker HorizontalAlignment="Left" Height="38" Margin="660,220,0,0" VerticalAlignment="Top" Width="216"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Height="38" Margin="50,281,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="755,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="121" RenderTransformOrigin="0.504,0.92"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,276,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="366"/>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="190,353,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="366"/>
-        <Label Content="Direccion:" HorizontalAlignment="Left" Height="38" Margin="50,358,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.532,-0.258"/>
+        <Label Content="Cedula"                 HorizontalAlignment="Left" Height="56" Margin="50,85,0,0"   VerticalAlignment="Top" Width="77" FontSize="22"/>
+        <Label Content="Nombres: "              HorizontalAlignment="Left" Height="42" Margin="50,141,0,0"  VerticalAlignment="Top" Width="111" FontSize="22"/>
+        <Label Content="Apellidos:"             HorizontalAlignment="Left" Height="38" Margin="50,215,0,0"  VerticalAlignment="Top" Width="111" FontSize="22" RenderTransformOrigin="0.514,-0.303"/>
+        <Label Content="NUEVO PACIENTE"         HorizontalAlignment="Left" Height="53" Margin="50,10,0,0"   VerticalAlignment="Top" Width="308" FontSize="30" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Sexo"                   HorizontalAlignment="Left" Height="38" Margin="654,85,0,0"  VerticalAlignment="Top" Width="64"  FontSize="22"/>
+        <Label Content="Fecha de Nacimiento"    HorizontalAlignment="Left" Height="38" Margin="654,170,0,0" VerticalAlignment="Top" Width="222" FontSize="22" />
+        <Label Content="Telefono:"              HorizontalAlignment="Left" Height="38" Margin="50,281,0,0"  VerticalAlignment="Top" Width="111" FontSize="22"/>
+        <Label Content="Direccion:"             HorizontalAlignment="Left" Height="38" Margin="50,358,0,0"  VerticalAlignment="Top" Width="111" FontSize="22"/>
+
+        <Button Content="GUARDAR "              HorizontalAlignment="Left" Height="52" Margin="224,474,0,0" VerticalAlignment="Top" Width="242" Click="Button_Click_2"  FontSize="22"/>
+        <Button Content="CANCELAR"              HorizontalAlignment="Left" Height="52" Margin="552,474,0,0" VerticalAlignment="Top" Width="259" Click="Button_Click_1"  FontSize="22"/>
+        <Button Content="AGREGAR ANTECEDENTE "  HorizontalAlignment="Left" Height="37" Margin="654,296,0,0" VerticalAlignment="Top" Width="242" Click="Button_Click"    FontSize="22"/>
+        
+        <DatePicker Name="dt_fecha"     HorizontalAlignment="Left" Height="38" Margin="654,215,0,0" VerticalAlignment="Top" Width="216"/>
+
+        <TextBox Name="txt_cedula"      HorizontalAlignment="Left" Height="43" Margin="190,85,0,0"  VerticalAlignment="Top" Width="248" TextWrapping="Wrap" Text="" FontSize="22" />
+        <TextBox Name="txt_nombre"      HorizontalAlignment="Left" Height="43" Margin="190,145,0,0" VerticalAlignment="Top" Width="366" TextWrapping="Wrap" Text="" FontSize="22"/>
+        <TextBox Name="txt_apellido"    HorizontalAlignment="Left" Height="43" Margin="190,215,0,0" VerticalAlignment="Top" Width="366" TextWrapping="Wrap" Text="" FontSize="22"/>
+        <TextBox Name="txt_sexo"        HorizontalAlignment="Left" Height="43" Margin="755,80,0,0"  VerticalAlignment="Top" Width="121" TextWrapping="Wrap" Text="" FontSize="22" RenderTransformOrigin="0.504,0.92"/>
+        <TextBox Name="txt_telefono"    HorizontalAlignment="Left" Height="43" Margin="190,276,0,0" VerticalAlignment="Top" Width="366" TextWrapping="Wrap" Text="" FontSize="22"/>
+        <TextBox Name="txt_direccion"   HorizontalAlignment="Left" Height="86" Margin="190,353,0,0" VerticalAlignment="Top" Width="366" TextWrapping="Wrap" Text="" FontSize="22"/>
+        
 
     </Grid>
 </Window>

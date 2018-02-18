@@ -12,4 +12,10 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+        Dim antecedente As New Antecedentes
+        antecedente.Owner = Me
+        antecedente.Show()
+    End Sub
 End Class

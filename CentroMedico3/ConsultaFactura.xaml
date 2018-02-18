@@ -13,40 +13,38 @@
 
         <Label Content="Paciente" HorizontalAlignment="Left" Height="27" Margin="25,5,0,0" VerticalAlignment="Top" Width="89"/>
         <Label Content="Doctor" HorizontalAlignment="Left" Height="28" Margin="490,4,0,0" VerticalAlignment="Top" Width="89"/>
-        <Label Content="Diagnóstico" HorizontalAlignment="Left" Height="42" Margin="25,195,0,0" VerticalAlignment="Top" Width="133"/>
-        <Label Content="Sintomas" HorizontalAlignment="Left" Height="42" Margin="25,96,0,0" VerticalAlignment="Top" Width="169"/>
-        <TextBox HorizontalAlignment="Left" Height="27" Margin="130,5,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="293"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="596,4,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="293"/>
-        <TextBox HorizontalAlignment="Left" Height="86" Margin="165,94,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="304"/>
-        <Button Content="IMPRIMIR/COBRAR" HorizontalAlignment="Left" Height="33" Margin="165,516,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click"/>
-        <Button Content="VOLVER" HorizontalAlignment="Left" Height="33" Margin="596,516,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click_1"/>
-
-        <StackPanel HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="992"/>
+        <Label Content="Diagnóstico" HorizontalAlignment="Left" Height="42" Margin="25,195,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="Sintomas" HorizontalAlignment="Left" Height="42" Margin="25,96,0,0" VerticalAlignment="Top" Width="89"/>
         <Label Content="Fecha de Consulta" HorizontalAlignment="Left" Height="27" Margin="25,37,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.461,2.222"/>
-        <DatePicker HorizontalAlignment="Left" Height="31" Margin="130,38,0,0" VerticalAlignment="Top" Width="176"/>
-        <ListView Margin="520,108,24,221" Background="White"  >
+        <Label Content="Peso" HorizontalAlignment="Left" Height="27" Margin="27,338,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Estatura" HorizontalAlignment="Left" Height="27" Margin="27,370,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Presión" HorizontalAlignment="Left" Height="27" Margin="28,402,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Temperatura" HorizontalAlignment="Left" Height="28" Margin="28,434,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="VALOR TOTAL" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="89" Margin="520,384,0,0"/>
+
+        <TextBox Name="txt_paciente"    HorizontalAlignment="Left" Height="27" Margin="132,5,0,0"      TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_doctor"      HorizontalAlignment="Left" Height="27" Margin="596,4,0,0"      TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_sintoma"     HorizontalAlignment="Left" Height="86" Margin="131,94,0,0"     TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_diagnostico" HorizontalAlignment="Left" Height="86" Margin="131,195,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_peso"        HorizontalAlignment="Left" Height="27" Margin="131,338,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_estatura"    HorizontalAlignment="Left" Height="27" Margin="132,370,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_presion"     HorizontalAlignment="Left" Height="27" Margin="132,402,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_temperatura" HorizontalAlignment="Left" Height="27" Margin="132,434,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294" IsEnabled="False"/>
+        <TextBox Name="txt_total"       HorizontalAlignment="Left" Height="69" Margin="687,388,0,0"    TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" IsEnabled="False" FontSize="32"/>
+        
+        <Button Content="IMPRIMIR/COBRAR"   HorizontalAlignment="Left" Height="33" Margin="165,516,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click"/>
+        <Button Content="VOLVER"            HorizontalAlignment="Left" Height="33" Margin="596,516,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click_1"/>
+        
+        <DatePicker Name="dt_fecha"         HorizontalAlignment="Left" Height="31" Margin="130,38,0,0"  VerticalAlignment="Top" Width="176"/>
+
+        <ListView Name="lst_receta" Margin="520,108,24,221" Background="White" SelectionChanged="ListView_SelectionChanged"  >
             <Label Content="hola"/>
-            <Label Content="."/>
+            <Label Content=".................................cargando--........."/>
             <Label Content="... Movimiento "/>
             <Label Content="naranja ..."/>
             <Label Content="..."/>
             <Label Content="el futuro esta en tus manos :v"/>
         </ListView>
-        <Grid HorizontalAlignment="Left" Height="433" Margin="491,78,0,0" VerticalAlignment="Top" Width="491">
-            <Label Content="VALOR TOTAL" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="89" Margin="27,273,0,0"/>
-            <TextBox HorizontalAlignment="Left" Height="69" Margin="194,277,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="428" Margin="25,83,0,0" VerticalAlignment="Top" Width="466">
-            <Label Content="Peso" HorizontalAlignment="Left" Height="27" Margin="12,226,0,0" VerticalAlignment="Top" Width="88"/>
-            <TextBox HorizontalAlignment="Left" Height="27" Margin="116,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="294"/>
-            <Label Content="Estatura" HorizontalAlignment="Left" Height="27" Margin="12,258,0,0" VerticalAlignment="Top" Width="88"/>
-            <TextBox HorizontalAlignment="Left" Height="27" Margin="116,258,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="294"/>
-            <Label Content="Presión" HorizontalAlignment="Left" Height="27" Margin="12,290,0,0" VerticalAlignment="Top" Width="88"/>
-            <TextBox HorizontalAlignment="Left" Height="27" Margin="116,290,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="294"/>
-            <Label Content="Temperatura" HorizontalAlignment="Left" Height="27" Margin="12,322,0,0" VerticalAlignment="Top" Width="88"/>
-            <TextBox HorizontalAlignment="Left" Height="27" Margin="116,322,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="294"/>
-        </Grid>
-        <TextBox HorizontalAlignment="Left" Height="86" Margin="165,195,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="304"/>
 
 
 

@@ -21,4 +21,8 @@
     Private Sub lst_medicina_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs)
 
     End Sub
+
+    Private Sub ListView_SelectionChanged(sender As Object, e As System.Windows.Controls.SelectionChangedEventArgs)
+
+    End Sub
 End Class

@@ -122,3 +122,5 @@ C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Cen
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CentroMedico3.exe
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CentroMedico3.xml
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CentroMedico3.pdb
+C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.g.vb
+C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.baml

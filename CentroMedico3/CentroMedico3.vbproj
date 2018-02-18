@@ -65,6 +65,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Antecedentes.xaml.vb">
+      <DependentUpon>Antecedentes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="clases\Antecedente.vb" />
     <Compile Include="clases\Cita.vb" />
     <Compile Include="clases\Cliente.vb" />
@@ -116,6 +119,10 @@
     <Compile Include="WinMedicina.xaml.vb">
       <DependentUpon>WinMedicina.xaml</DependentUpon>
     </Compile>
+    <Page Include="Antecedentes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ConsultaFactura.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

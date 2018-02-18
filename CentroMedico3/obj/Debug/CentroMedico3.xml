@@ -54,6 +54,16 @@ CentroMedico3
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:CentroMedico3.Antecedentes">
+<summary>
+Antecedentes
+</summary>
+</member>
+<member name="M:CentroMedico3.Antecedentes.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:CentroMedico3.ConsultaFactura">
 <summary>
 ConsultaFactura
