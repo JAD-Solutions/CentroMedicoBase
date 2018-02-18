@@ -1,8 +1,9 @@
-﻿Imports System.ComponentModel
+﻿Imports System.Collections.ObjectModel
+Imports System.ComponentModel
 Public Class Consulta
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_con As Integer
+    Dim _codigo_con As Integer = 0
     Dim _motivo_con As String
     Dim _diagnostico_con As String
     Dim _cita_con As Cita
@@ -11,8 +12,7 @@ Public Class Consulta
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo As Integer, ByVal motivo_con As String, ByVal diagnostico_con As String, ByVal cita_con As Cita, ByVal triage_con As Triage)
-        Me._codigo_con = codigo
+    Public Sub New(ByVal motivo_con As String, ByVal diagnostico_con As String, ByVal cita_con As Cita, ByVal triage_con As Triage)
         Me._motivo_con = motivo_con
         Me._diagnostico_con = diagnostico_con
         Me._cita_con = cita_con
