@@ -4,15 +4,18 @@ Imports System.Collections.ObjectModel
 Public Class Triage
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_tri As Integer = 0
+    Dim _codigo_tri As Integer
     Dim _descripcion_tri As String
+    Dim _parametros_eva_tri As ObservableCollection(Of ParametrosEvaluacion)
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal descripcion_tri As String)
+    Public Sub New(ByVal codigo_tri As Integer, ByVal descripcion_tri As String, ByVal parametros_eva_tri As ObservableCollection(Of ParametrosEvaluacion))
         'constructor)
+        Me._codigo_tri = codigo_tri
         Me._descripcion_tri = descripcion_tri
+        Me._parametros_eva_tri = parametros_eva_tri
 
     End Sub
     'Eventos
@@ -40,5 +43,13 @@ Public Class Triage
             Me.cambioPropiedad("Descripcion_tri")
         End Set
     End Property
-
+    Public Property Parametros_eva_tri As ObservableCollection(Of ParametrosEvaluacion)
+        Get
+            Return Me._parametros_eva_tri
+        End Get
+        Set(value As ObservableCollection(Of ParametrosEvaluacion))
+            Me._parametros_eva_tri = value
+            Me.cambioPropiedad("Parametros_eva_tri")
+        End Set
+    End Property
 End Class

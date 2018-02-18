@@ -82,8 +82,6 @@
     <Compile Include="clases\Recepcionista.vb" />
     <Compile Include="clases\Receta.vb" />
     <Compile Include="clases\Triage.vb" />
-    <Compile Include="Conexion\Coneccion.vb" />
-    <Compile Include="Conexion\Plantillasql.vb" />
     <Compile Include="ConsultaFactura.xaml.vb">
       <DependentUpon>ConsultaFactura.xaml</DependentUpon>
     </Compile>
@@ -96,20 +94,6 @@
     <Compile Include="CreaPaciente.xaml.vb">
       <DependentUpon>CreaPaciente.xaml</DependentUpon>
     </Compile>
-    <Compile Include="gestores\ControladorAntecedentes.vb" />
-    <Compile Include="gestores\ControladorCita.vb" />
-    <Compile Include="gestores\ControladorConsulta.vb" />
-    <Compile Include="gestores\ControladorDetalleFactura.vb" />
-    <Compile Include="gestores\ControladorFactura.vb" />
-    <Compile Include="gestores\ControladorLineaReceta.vb" />
-    <Compile Include="gestores\ControladorMedicina.vb" />
-    <Compile Include="gestores\ControladorMedico.vb" />
-    <Compile Include="gestores\ControladorPaciente.vb" />
-    <Compile Include="gestores\ControladorParametros.vb" />
-    <Compile Include="gestores\ControladorRecepcionista.vb" />
-    <Compile Include="gestores\ControladorReceta.vb" />
-    <Compile Include="gestores\ControladorTriage.vb" />
-    <Compile Include="gestores\GestorCliente.vb" />
     <Compile Include="MainMedico.xaml.vb">
       <DependentUpon>MainMedico.xaml</DependentUpon>
     </Compile>
@@ -250,9 +234,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="basic.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="colecciones\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
