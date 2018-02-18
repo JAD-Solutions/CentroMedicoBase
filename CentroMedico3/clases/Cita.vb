@@ -12,6 +12,7 @@ Public Class Cita
 
     End Sub
     Public Sub New(ByVal fecha_cit As Date, ByVal paciente As Paciente, ByVal recepcionista As Recepcionista, ByVal medico_cit As Medico)
+        Me._codigo_cit = Codigo_cit
         Me._fecha_cit = fecha_cit
         Me._medico_cit = medico_cit
         Me._paciente_cit = paciente

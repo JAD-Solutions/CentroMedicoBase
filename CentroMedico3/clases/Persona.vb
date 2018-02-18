@@ -22,7 +22,6 @@ Public MustInherit Class Persona  'para que sea la clase padre debo pooner musti
         Me._sexo_per = sexo_per
         Me._telefono_per = telefono_per
         Me._direccion_per = direccion_per
-        Me._codigo_per = 0
     End Sub
 
     Private Sub cambioPropiedad(ByVal propiedad As String)
@@ -39,13 +38,12 @@ Public MustInherit Class Persona  'para que sea la clase padre debo pooner musti
         End Set
     End Property
 
-
     Public Property Cedula_per As String
         Get
             Return _ci_per
         End Get
         Set(value As String)
-            _ci_per = Cedula_per
+            _ci_per = value
             cambioPropiedad("Cedula_per")
         End Set
     End Property

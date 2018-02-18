@@ -1,4 +1,5 @@
-﻿Imports System.ComponentModel
+﻿Imports System.Collections.ObjectModel
+Imports System.ComponentModel
 Public Class Consulta
     Implements INotifyPropertyChanged
     'atributos
