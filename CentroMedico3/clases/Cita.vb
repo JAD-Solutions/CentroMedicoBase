@@ -2,7 +2,7 @@
 Public Class Cita
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_cit As Integer
+    Dim _codigo_cit As Integer = 0
     Dim _fecha_cit As Date
     Dim _paciente_cit As Paciente
     Dim _recepcionista_cit As Recepcionista
@@ -11,8 +11,8 @@ Public Class Cita
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_cit As Integer, ByVal fecha_cit As Date, ByVal paciente As Paciente, ByVal recepcionista As Recepcionista, ByVal medico_cit As Medico)
-        Me._codigo_cit = codigo_cit
+    Public Sub New(ByVal fecha_cit As Date, ByVal paciente As Paciente, ByVal recepcionista As Recepcionista, ByVal medico_cit As Medico)
+        Me._codigo_cit = Codigo_cit
         Me._fecha_cit = fecha_cit
         Me._medico_cit = medico_cit
         Me._paciente_cit = paciente

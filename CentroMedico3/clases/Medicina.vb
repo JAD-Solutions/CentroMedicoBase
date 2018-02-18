@@ -2,7 +2,7 @@
 Public Class Medicina
     Implements INotifyPropertyChanged
     'atributos
-    Dim _codigo_mec As Integer
+    Dim _codigo_mec As Integer = 0
     Dim _nombre_mec As String
     Dim _contenido_mec As String
     Dim _descripcion_mec As String
@@ -11,8 +11,7 @@ Public Class Medicina
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal codigo_mec As Integer, ByVal nombre As String, ByVal contenido As String, ByVal descripcion As String)
-        Me._codigo_mec = codigo_mec
+    Public Sub New(ByVal nombre As String, ByVal contenido As String, ByVal descripcion As String)
         Me._nombre_mec = nombre
         Me._contenido_mec = contenido
         Me._descripcion_mec = descripcion
