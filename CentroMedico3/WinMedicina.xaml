@@ -18,15 +18,12 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="485,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <ComboBox HorizontalAlignment="Left" Margin="485,178,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem
-                Content="Medicina1"/>
+                Content="Ibuprofeno"/>
             <ComboBoxItem
-                Content="Medicina2"/>
+                Content="Paracetamol"/>
             <ComboBoxItem
-                Content="Medicina3"/>
-            <ComboBoxItem
-                Content="Medicina4"/>
-            <ComboBoxItem
-                Content="Medicina5"/>
+                Content="Loratadina"/>
+
         </ComboBox>
         <Button Name="bt_agregar" Content="Agregar" HorizontalAlignment="Left" Margin="453,455,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_agregar_Click"/>
         <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="0,541,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_volver_Click"/>

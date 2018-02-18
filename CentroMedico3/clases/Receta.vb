@@ -5,15 +5,13 @@ Public Class Receta
     'atributos
     Dim _codigo_rec As Integer = 0
     Dim _descripcion_rec As String
-    Dim _lista_medicinas_rec As ObservableCollection(Of LineaReceta)
 
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal descripcion_re As String, ByVal lista_medicinas As ObservableCollection(Of LineaReceta))
+    Public Sub New(ByVal descripcion_re As String)
         Me._descripcion_rec = descripcion_re
-        Me._lista_medicinas_rec = lista_medicinas
     End Sub
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
@@ -40,15 +38,7 @@ Public Class Receta
             Me.cambioPropiedad("Descripcion_rec")
         End Set
     End Property
-    Public Property Lista_medicinas_rec As ObservableCollection(Of LineaReceta)
-        Get
-            Return Me._lista_medicinas_rec
-        End Get
-        Set(value As ObservableCollection(Of LineaReceta))
-            Me._lista_medicinas_rec = value
-            Me.cambioPropiedad("Lista_medicinas_rec ")
-        End Set
-    End Property
+
     Public Function RegistrarReceta()
 
     End Function

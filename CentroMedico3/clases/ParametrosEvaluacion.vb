@@ -6,15 +6,16 @@ Public Class ParametrosEvaluacion
     Dim _nombre_par As String
     Dim _valor_par As Double
     Dim _fecha_par As Date
+    Dim _triage_par As Triage
     'constructor
     Public Sub New()
 
     End Sub
-    Public Sub New(ByVal nombre_par As String, ByVal valor_par As Double, ByVal fecha_par As Date)
+    Public Sub New(ByVal nombre_par As String, ByVal valor_par As Double, ByVal fecha_par As Date, ByVal triage_par As Triage)
         Me._nombre_par = nombre_par
         Me._valor_par = valor_par
         Me._fecha_par = fecha_par
-
+        Me._triage_par = triage_par
     End Sub
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
@@ -57,6 +58,15 @@ Public Class ParametrosEvaluacion
         Set(value As Date)
             Me._fecha_par = value
             Me.cambioPropiedad("Fecha_par")
+        End Set
+    End Property
+    Public Property Triage_par As Triage
+        Get
+            Return _triage_par
+        End Get
+        Set(value As Triage)
+            _triage_par = value
+            cambioPropiedad("Triage_par")
         End Set
     End Property
     Public Function IngresarParametros()
