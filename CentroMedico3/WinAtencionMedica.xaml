@@ -15,9 +15,16 @@
         <Label Content="CONSULTA MÉDICA" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top" Width="382" FontSize="30" RenderTransformOrigin="1.16,0.312" FontWeight="Bold" FontFamily="elephant" />
         <Label Content="Paciente:" HorizontalAlignment="Left" Margin="52,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16"/>
         <Label Content="Motivo:" HorizontalAlignment="Left" Margin="13,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="84" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_motivo" Text="{Binding Descripcion_rec}"  HorizontalAlignment="Left" Height="59" Margin="140,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
         <Label Content="Triage" HorizontalAlignment="Left" Margin="24,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="73"/>
         <TextBox Name="in_diagnostico" Text="{Binding Path=Descripcion_rec}"  HorizontalAlignment="Left" Height="59" Margin="140,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
         <Label Content="Diagnóstico:" HorizontalAlignment="Left" Margin="13,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="148" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Peso:" HorizontalAlignment="Left" Margin="24,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="84" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Estatura:" HorizontalAlignment="Left" Margin="24,364,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="84" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Presión:" HorizontalAlignment="Left" Margin="24,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="84" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Temperatura:" HorizontalAlignment="Left" Margin="24,436,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="122" FontWeight="Bold" FontStyle="Italic"/>
+
+
         <ListView Name="lv_linea_receta"  HorizontalAlignment="Left" Height="241" Margin="526,70,0,0" VerticalAlignment="Top" Width="441">
             <ListView.View>
                 <GridView>
@@ -41,11 +48,10 @@
         <Button Name="bt_agregar_medicina"  Content="Agregar medicina" HorizontalAlignment="Left" Margin="675,331,0,0" VerticalAlignment="Top" Width="132" Height="28" FontSize="16" Click="bt_agregar_medicina_Click"/>
         <Button Name="bt_guardar_consulta" Content="Guardar" HorizontalAlignment="Left" Margin="633,520,0,0" VerticalAlignment="Top" Width="132" Height="28" FontSize="16" Click="bt_guardar_consulta_Click"/>
         <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="0,541,0,0" VerticalAlignment="Top" Width="132" Height="28" FontSize="16" Click="bt_volver_Click"/>
-        <TextBox x:Name="in_diagnostico_Copy" Text="{Binding Descripcion_rec}"  HorizontalAlignment="Left" Height="59" Margin="140,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
-        <Button Name="bt_peso"  Content="Peso" HorizontalAlignment="Left" Margin="24,362,0,0" VerticalAlignment="Top" Width="100" Height="28" FontSize="16" Click="bt_parametro_Click"/>
-        <Button Name="bt_estatura"  Content="Estatura" HorizontalAlignment="Left" Margin="140,362,0,0" VerticalAlignment="Top" Width="100" Height="28" FontSize="16" Click="bt_parametro_Click"/>
-        <Button Name="bt_presion"  Content="Presión" HorizontalAlignment="Left" Margin="260,362,0,0" VerticalAlignment="Top" Width="100" Height="28" FontSize="16" Click="bt_parametro_Click"/>
-        <Button Name="bt_temeperatura"  Content="Temperatura" HorizontalAlignment="Left" Margin="380,362,0,0" VerticalAlignment="Top" Width="100" Height="28" FontSize="16" Click="bt_parametro_Click"/>
+        <TextBox Name="in_peso" HorizontalAlignment="Left" Height="28" Margin="140,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
+        <TextBox Name="in_estatura" HorizontalAlignment="Left" Height="28" Margin="140,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
+        <TextBox Name="in_presion" HorizontalAlignment="Left" Height="28" Margin="140,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
+        <TextBox Name="in_temperatura" HorizontalAlignment="Left" Height="28" Margin="140,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" FontSize="14"  RenderTransformOrigin="0.503,0.128"/>
 
     </Grid>
 </Window>

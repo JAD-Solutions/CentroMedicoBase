@@ -5,7 +5,7 @@ Public Class Triage
     Implements INotifyPropertyChanged
     'atributos
     Dim _codigo_tri As Integer = 0
-    Dim _descripcion_tri As String
+    Dim _descripcion_tri As String = "triage descripcion"
     'constructor
     Public Sub New()
 

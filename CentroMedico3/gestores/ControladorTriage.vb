@@ -26,8 +26,10 @@ Public Class ControladorTriage
         Dim campos(1) As String
         campos(1) = "*"
         _metodos.Selectdato(campos, "t_triage", lista)
-
     End Sub
+    Public Function obtenerCodigoTriage(ByVal valor As String) As Integer
+        Return _metodos.Select1dato("codigo_tri", "descripcion_tri", "'" + valor + "'", "t_triage")
+    End Function
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 End Class

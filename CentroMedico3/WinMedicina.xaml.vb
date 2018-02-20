@@ -5,7 +5,6 @@ Class WinMedicina
     Dim medicina1 As Medicina
     Public receta1 As Receta = New Receta()
     Public linea_receta As LineaReceta = New LineaReceta()
-    Dim ventana_atencion As WinAtencionMedica = New WinAtencionMedica()
     'Dim ventana_receta As WinReceta = New WinReceta()
     Dim control_rec As ControladorReceta = New ControladorReceta()
     Public codigo_receta As Integer
@@ -48,7 +47,7 @@ Class WinMedicina
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         'Me.DataContext = linea_receta
         contr.mostrarmedicinaCombo(cb_medicina)
-        MsgBox(receta1.Descripcion_rec)
+        'MsgBox(receta1.Descripcion_rec)
 
     End Sub
 
