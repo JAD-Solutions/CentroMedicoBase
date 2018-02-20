@@ -28,6 +28,16 @@ Public Class ControladorReceta
         _metodos.Selectdato(campos, "t_receta", lista)
 
     End Sub
+    Public Sub mostrarrecetaEspecifica(ByVal condicion As String, ByVal lista As ListView)
+        Dim campos(0) As String
+        campos(0) = "*"
+        _metodos.Selectdato2tablas(campos, "t_receta", condicion, lista)
+
+    End Sub
+    Public Function obtenerCodigoReceta(ByVal valor As String) As Integer
+        Return _metodos.Select1dato("codigo_rec", "descripcion_rec", "'" + valor + "'", "t_receta")
+
+    End Function
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 End Class

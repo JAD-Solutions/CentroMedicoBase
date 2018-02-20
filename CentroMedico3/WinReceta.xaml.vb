@@ -1,9 +1,10 @@
-﻿Class WinAtencionMedica
+﻿Class WinReceta
 
     Public receta_Actual As Receta = New Receta()
     Dim control_rec As ControladorReceta = New ControladorReceta()
-    Dim contador As Integer = 1
-    Dim control_lin As ControladorLineaReceta = New ControladorLineaReceta()
+    Dim ventana_medicina As WinMedicina = New WinMedicina()
+
+    'Dim ventana_linea_receta As WinMedicina = New WinMedicina()
 
     Private Sub bt_historia_clinica_Click(sender As Object, e As RoutedEventArgs)
         Dim ventana_historia_clinica As New WinHistoriaClinica
@@ -12,27 +13,16 @@
     End Sub
 
     Private Sub bt_agregar_medicina_Click(sender As Object, e As RoutedEventArgs)
-        Dim ventana_medicina As WinMedicina = New WinMedicina()
-
         MsgBox(receta_Actual.Descripcion_rec)
         If (in_diagnostico.Text = Nothing) Then
             MsgBox("No se ingresó nada")
         Else
-            If (contador = 1) Then
-                control_rec.agregarreceta(receta_Actual)
-            End If
+            control_rec.agregarreceta(receta_Actual)
             ventana_medicina.receta1 = receta_Actual
             MsgBox(ventana_medicina.receta1.Descripcion_rec)
-            ventana_medicina.Owner = Me
-            ventana_medicina.ShowDialog()
-            Dim codigo_rec As Integer = ventana_medicina.codigo_receta
-            ' MsgBox(codigo_rec)
-            Dim condicion As String
-            condicion = "codigo_rec = " + codigo_rec.ToString + " and t_medicina.codigo_mec=t_lineaReceta.codigo_mec"
-
-            control_lin.mostrarLineaRecetaEspecifica(condicion, lv_linea_receta)
-            contador = contador + 1
+            ventana_medicina.Show()
         End If
+
 
 
 

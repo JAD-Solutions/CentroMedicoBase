@@ -75,7 +75,9 @@ Public Class Plantillasql
                 i = i + 1
             Next
             sql = sql + " from " + tabla
+            'MsgBox(sql)
             cnn.Open()
+            'MsgBox(sql)
             cmd = New SqlCommand(sql, cnn)
             cmd.ExecuteNonQuery()
             Dim da As New SqlDataAdapter(cmd)
@@ -89,6 +91,69 @@ Public Class Plantillasql
         End Try
 
     End Function
+
+    Public Function SelectdatoCombo(ByVal campos() As String, ByVal tabla As String, ByVal combo As ComboBox)
+        Try
+            Dim sql As String = "Select "
+            Dim i As Integer
+            i = 0
+            For Each campo In campos
+                If i = 0 Then
+                    sql = sql + "" + campo
+                Else
+                    sql = sql + "," + campo
+                End If
+                i = i + 1
+            Next
+            sql = sql + " from " + tabla
+            'MsgBox(sql)
+            cnn.Open()
+
+            cmd = New SqlCommand(sql, cnn)
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+            da.Fill(ds, tabla)
+            combo.ItemsSource = ds.Tables(tabla).DefaultView
+            cnn.Close()
+            Return True
+        Catch ex As Exception
+            Throw (New Exception("Error en la Base de datos"))
+        End Try
+
+    End Function
+
+    Public Function SelectdatoTexto(ByVal campos() As String, ByVal tabla As String, ByVal texto As TextBox)
+        Try
+            Dim sql As String = "Select "
+            Dim i As Integer
+            i = 0
+            For Each campo In campos
+                If i = 0 Then
+                    sql = sql + "" + campo
+                Else
+                    sql = sql + "," + campo
+                End If
+                i = i + 1
+            Next
+            sql = sql + " from " + tabla
+            'MsgBox(sql)
+            cnn.Open()
+
+            cmd = New SqlCommand(sql, cnn)
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+            da.Fill(ds, tabla)
+            'texto.Text = ds.Tables(tabla).DefaultView
+            cnn.Close()
+            Return True
+        Catch ex As Exception
+            Throw (New Exception("Error en la Base de datos"))
+        End Try
+
+    End Function
+
     Public Function Select1dato(ByVal campo0 As String, ByVal campo As String, ByVal valor As String, ByVal tabla As String) As Integer
         Try
             Dim sql As String
@@ -104,6 +169,62 @@ Public Class Plantillasql
         Catch ex As Exception
             Throw (New Exception("Error en la Base de datos"))
         End Try
+
+    End Function
+    Public Sub SelecParaCombo()
+        Dim sqlda As SqlDataAdapter = New SqlDataAdapter()
+        Dim sql As String
+
+
+    End Sub
+    Public Function Selectdato2tablas(ByVal campos() As String, ByVal tabla As String, ByVal condicion As String, ByVal lista As ListView)
+        Try
+            Dim sql As String = "Select "
+            Dim i As Integer
+            i = 0
+            For Each campo In campos
+                If i = 0 Then
+                    sql = sql + "" + campo
+                Else
+                    sql = sql + ", " + campo
+                End If
+                i = i + 1
+            Next
+            sql = sql + " from " + tabla + " where " + condicion
+            MsgBox(sql)
+            cnn.Open()
+            cmd = New SqlCommand(sql, cnn)
+            cmd.ExecuteNonQuery()
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+            da.Fill(ds, tabla)
+            lista.ItemsSource = ds.Tables(tabla).DefaultView
+            cnn.Close()
+            Return True
+        Catch ex As Exception
+            Throw (New Exception("Error en la Base de datos"))
+        End Try
+
+    End Function
+    Public Function listarTabla(ByVal tabla As String) As DataSet
+
+        Dim dt1 As New DataSet
+
+        Dim cmd As New SqlCommand("select *From  t_persona ", cnn)
+
+        cnn.Open()
+
+        Dim Da As New SqlDataAdapter(cmd)
+
+        Da.Fill(dt1, tabla)
+
+        cnn.Close()
+
+        listarTabla = dt1
+
+        '  MsgBox("listo para return")
+
+        Return listarTabla
 
     End Function
 End Class

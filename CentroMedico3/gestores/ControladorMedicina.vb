@@ -27,9 +27,19 @@ Public Class ControladorMedicina
         _metodos.insertarDato(campos, valores, "t_medicina")
     End Sub
     Public Sub mostrarmedicina(ByVal lista As ListView)
-        Dim campos(1) As String
-        campos(1) = "*"
+        Dim campos(0) As String
+        campos(0) = "*"
         _metodos.Selectdato(campos, "t_medicina", lista)
+    End Sub
+    Public Sub mostrarmedicinaCombo(ByVal combo As ComboBox)
+        Dim campos(0) As String
+        campos(0) = "*"
+        _metodos.SelectdatoCombo(campos, "t_medicina", combo)
+    End Sub
+    Public Sub mostrarContenidoMedicina(ByVal texto As TextBox)
+        Dim campos(0) As String
+        campos(0) = "*"
+        _metodos.SelectdatoTexto(campos, "t_medicina", texto)
     End Sub
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged

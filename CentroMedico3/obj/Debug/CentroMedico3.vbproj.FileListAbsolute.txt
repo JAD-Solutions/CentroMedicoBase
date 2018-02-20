@@ -48,7 +48,6 @@ C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Co
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\ConsultaPaciente.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CreaCita.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CreaPaciente.g.vb
-C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainMedico.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainRecepcionista.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainWindow.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\VerCitas.g.vb
@@ -65,7 +64,6 @@ C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Co
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\ConsultaPaciente.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CreaCita.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CreaPaciente.baml
-C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainMedico.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainRecepcionista.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\MainWindow.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\VerCitas.baml
@@ -124,3 +122,7 @@ C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Cen
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\CentroMedico3.pdb
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.g.vb
 C:\Users\Johnny\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.baml
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.g.vb
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.baml
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinReceta.g.vb
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinReceta.baml

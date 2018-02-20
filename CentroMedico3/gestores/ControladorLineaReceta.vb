@@ -15,7 +15,7 @@ Public Class ControladorLineaReceta
         Dim condicion As String = linea.Codigo_lin
         _metodos.eliminar("t_lineaReceta", condicion)
     End Sub
-    Public Sub agregarfact(ByVal linea As LineaReceta)
+    Public Sub agregarlinea(ByVal linea As LineaReceta)
         Dim valores(3) As String
         Dim campos(3) As String
         campos(1) = "cantidad_lin"
@@ -26,11 +26,26 @@ Public Class ControladorLineaReceta
         valores(3) = linea.Receta_lin.Codigo_rec
         _metodos.insertarDato(campos, valores, "t_lineaReceta")
     End Sub
-    Public Sub mostrarfactura(ByVal lista As ListView)
-        Dim campos(1) As String
-        campos(1) = "*"
+    Public Sub mostrarlinea(ByVal lista As ListView)
+        Dim campos(0) As String
+        campos(0) = "*"
         _metodos.Selectdato(campos, "t_lineaReceta", lista)
     End Sub
+    Public Sub mostrarLineaRecetaEspecifica(ByVal condicion As String, ByVal lista As ListView)
+        '        Select Case t_medicina.nombre_mec,t_medicina.descripcion_mec,t_lineaReceta.cantidad_lin 
+        'From t_lineaReceta, t_medicina
+        'Where codigo_rec = 21
+        'And t_medicina.codigo_mec=t_lineaReceta.codigo_mec
+
+        Dim campos(2) As String
+        campos(0) = "t_medicina.nombre_mec"
+        campos(1) = "t_medicina.descripcion_mec"
+        campos(2) = "t_lineaReceta.cantidad_lin"
+
+        _metodos.Selectdato2tablas(campos, "t_lineaReceta,t_medicina", condicion, lista)
+
+    End Sub
+
     'Eventos
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 End Class
