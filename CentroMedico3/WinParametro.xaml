@@ -1,0 +1,28 @@
+﻿<Window x:Class="WinParametro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CentroMedico3"
+        mc:Ignorable="d"
+        Title="Recetar Medicina" Height="450" Width="320" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
+        </Grid.Background>
+
+        <Label Content="Parámetro:" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="95" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_parametro" Text="{Binding Path=Contenido_mec}" HorizontalAlignment="Left" Height="23" Margin="140,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14" IsEnabled="False"/>
+
+        <Label Content="Valor:" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="130" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_valor" HorizontalAlignment="Left" Height="22" Margin="140,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
+
+
+        <Label Content="Fecha:" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="95" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_fecha" Text="{Binding Contenido_mec}" HorizontalAlignment="Left" Height="23" Margin="140,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14" IsEnabled="False" RenderTransformOrigin="0.5,3.739"/>
+
+        <Button Name="bt_agregar" Content="Agregar" HorizontalAlignment="Left" Margin="107,298,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_agregar_Click"/>
+        <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="107,331,0,0" VerticalAlignment="Top" Width="116" Height="28" FontSize="16" Click="bt_volver_Click"/>
+        <Label Content="PARÁMETRO DE EVALUACIÓN" HorizontalAlignment="Left" Margin="11,23,0,0" VerticalAlignment="Top" Width="293" FontSize="20" RenderTransformOrigin="1.16,0.312" FontWeight="Bold"/>
+    </Grid>
+</Window>

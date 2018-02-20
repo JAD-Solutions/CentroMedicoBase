@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 
-Class WinMedicina
+Class WinParametro
     Dim contr As ControladorMedicina = New ControladorMedicina()
     Dim medicina1 As Medicina
     Public receta1 As Receta = New Receta()

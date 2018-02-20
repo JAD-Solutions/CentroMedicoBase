@@ -5,28 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CentroMedico3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000" Loaded="Window_Loaded">
+        Title="Recetar Medicina" Height="450" Width="320" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="None" ImageSource="basic.jpg" AlignmentY="Top" AlignmentX="Left"/>
         </Grid.Background>
 
-        <Label Content="Medicina:" HorizontalAlignment="Left" Margin="300,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="109" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Dosis/día:" HorizontalAlignment="Left" Margin="300,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="148" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox Name="in_descripcion" Text="{Binding Path=Descripcion_mec}" HorizontalAlignment="Left" Height="23" Margin="486,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
-        <Button Name="bt_agregar" Content="Agregar" HorizontalAlignment="Left" Margin="453,455,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_agregar_Click"/>
-        <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="0,541,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_volver_Click"/>
-        <Label Content="AGREGAR MEDICINA" HorizontalAlignment="Left" Margin="383,16,0,0" VerticalAlignment="Top" Width="237" FontSize="20" RenderTransformOrigin="1.16,0.312" FontWeight="Bold"/>
-        <ListView Name="lv_medicina" HorizontalAlignment="Left" Height="100" Margin="486,107,0,0" VerticalAlignment="Top" Width="120">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Nombre"
-                                    DisplayMemberBinding="{Binding Path=nombre_mec}"
-                                    Width="120"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <ComboBox Name="cb_medicina" HorizontalAlignment="Left" Margin="662,112,0,0" VerticalAlignment="Top" Width="120"
+        <Label Content="Medicina:" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="95" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Dosis/día:" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="95" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_descripcion" Text="{Binding Path=Descripcion_mec}" HorizontalAlignment="Left" Height="24" Margin="140,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14" IsEnabled="False"/>
+        <Button Name="bt_agregar" Content="Agregar" HorizontalAlignment="Left" Margin="107,298,0,0" VerticalAlignment="Top" Width="117" Height="28" FontSize="16" Click="bt_agregar_Click"/>
+        <Button Name="bt_volver" Content="Volver" HorizontalAlignment="Left" Margin="107,331,0,0" VerticalAlignment="Top" Width="116" Height="28" FontSize="16" Click="bt_volver_Click"/>
+        <Label Content="RECETAR MEDICINA" HorizontalAlignment="Left" Margin="64,22,0,0" VerticalAlignment="Top" Width="238" FontSize="20" RenderTransformOrigin="1.16,0.312" FontWeight="Bold"/>
+        <ComboBox Name="cb_medicina" HorizontalAlignment="Left" Margin="140,87,0,0" VerticalAlignment="Top" Width="162"
                   ItemsSource="{Binding Path=t_medicina}" SelectionChanged="cb_medicina_SelectionChanged">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -39,10 +30,10 @@
             </ComboBox.ItemTemplate>
 
         </ComboBox>
-        <Label Content="Contenido:" HorizontalAlignment="Left" Margin="298,258,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="148" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox Name="in_contenido" Text="{Binding Path=Contenido_mec}" HorizontalAlignment="Left" Height="23" Margin="486,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" IsEnabled="False"/>
-        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="300,379,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="148" FontWeight="Bold" FontStyle="Italic"/>
-        <TextBox Name="in_cantidad" HorizontalAlignment="Left" Height="23" Margin="486,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Contenido(mg):" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="130" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_contenido" Text="{Binding Path=Contenido_mec}" HorizontalAlignment="Left" Height="23" Margin="140,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14" IsEnabled="False"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.632,-0.615" FontSize="16" Width="95" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="in_cantidad" HorizontalAlignment="Left" Height="22" Margin="140,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="14"/>
 
     </Grid>
 </Window>

@@ -134,6 +134,16 @@ VerPacientes
 InitializeComponent
 </summary>
 </member>
+<member name="T:CentroMedico3.WinParametro">
+<summary>
+WinParametro
+</summary>
+</member>
+<member name="M:CentroMedico3.WinParametro.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:CentroMedico3.WinReceta">
 <summary>
 WinReceta

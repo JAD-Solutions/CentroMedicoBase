@@ -4,7 +4,7 @@ Public Class Receta
     Implements INotifyPropertyChanged
     'atributos
     Dim _codigo_rec As Integer = 0
-    Dim _descripcion_rec As String
+    Dim _descripcion_rec As String = ""
 
     'constructor
     Public Sub New()

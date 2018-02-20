@@ -126,3 +126,5 @@ C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\An
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\Antecedentes.baml
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinReceta.g.vb
 C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinReceta.baml
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinParametro.g.vb
+C:\Users\Anthony\source\repos\CentroMedicoBase-master\CentroMedico3\obj\Debug\WinParametro.baml
